@@ -37,7 +37,7 @@ class TestBooksCollector:
 
 
      
-     def test_add_new_book_not_add_duplicate(self, collector):
+    def test_add_new_book_not_add_duplicate(self, collector):
         collector.add_new_book('Война и мир')
         collector.add_new_book('Война и мир')  # Попытка добавить ту же книгу
         # Проверяем, что книга добавлена только один раз
